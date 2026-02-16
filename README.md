@@ -1,6 +1,6 @@
 STM32 Practice (Bare Metal + HAL) 
 
-.Step 1: GPIO (Digital Output/Input) 
+Step 1: GPIO (Digital Output/Input) 
 
 Goal: Control LEDs and read buttons. 
 
@@ -64,6 +64,38 @@ Configure PWM output via CCRx and ARR.
 
 Practice: Blink LED at multiple frequencies; use PWM for dimming LED with potentiometer input. 
 
+
+✅ Practice 1
+
+Blink LED at:
+
+200 ms
+
+500 ms
+
+1 second
+(using only PSC and ARR)
+
+✅ Practice 2
+
+Button changes blink frequency:
+
+Short press → 500 ms
+
+Long press → 200 ms
+
+(Hint: change ARR on the fly)
+
+✅ Practice 3
+
+PWM dimming:
+
+Potentiometer → ADC
+
+ADC value → CCR
+
+LED brightness changes smoothly
+
 Step 4: ADC (Analog-to-Digital Converter) 
 
 Goal: Read analog values. 
@@ -82,7 +114,6 @@ Read DR for ADC value.
 
 Practice: Control LED brightness with a potentiometer. 
 
- 
 
 Step 5: UART / USART 
 
